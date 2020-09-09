@@ -33,4 +33,6 @@ app.get('/', (req, res, next) => {
     })
 });
 
+require('./app/routes/todo.routes.js')(app);
+
 app.listen(3000);
